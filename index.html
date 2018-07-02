@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Primary page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+        <h1> Most important heading </h1>
+        <h3> Less important heading </h3>
+        </header>
+        <p1>Trying color</p1> 
+        <div>
+            <p class="first">This is a paragraph</p>
+            <p> This is the second paragraph. </p>
+        </div>
+        <p class="first"> This is not in the intro section</p>
+        <p> The second paragraph is not in the intro section. </p>
+        
+        <div id="intro">
+           <p class="first">This is a <em> paragraph!!!</em></p>
+           <p> This is the second paragraph. </p>
+        </div>
+        <p class="first"> This is not in the intro section.</p>
+        <p> The second paragraph is not in the intro section. </p>
+        
+        <!--<audio src="http://www.sololearn.com/uploads/audio.mp3" controls>
+        Audio element not supported by your browser
+        </audio>-->
+        <audio controls>
+            <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
+            <source src="http://www.sololearn.com/uploads/audio.ogg" type="audio/ogg">
+            Audio element not supported by your browser. 
+        </audio>
+        
+        <video controls>
+           <source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4">
+           <source src="http://www.sololearn.com/uploads/video.ogg" type="video/ogg">
+           Video is not supported by your browser
+        </video>
+        
+<!--        navigator.geolocation.getCurrentPosition();-->
+        <p>
+        Status: <progress min="0" max="1" value="45">
+                </progress>
+        </p>
+<!--
+        <svg width="2000" height="2000">
+           <circle cx="80" cy="80" r="50" fill="green" />
+           <polygon points="100 100, 200 200, 300 0" style="fill: green; stroke:black;" />
+        </svg>
+-->
+        <p>
+        <canvas id="canvas1" width="150" height="150">
+        </canvas> 
+        <script>
+        var c=document.getElementById("canvas1");
+        var ctx=c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(10,10, 100, 100);
+        ctx.rotate( (Math.PI / 180) * 10);  //rotate 25 degrees.
+        ctx.fillStyle = "#0000FF";
+        ctx.fillRect(10,10, 100, 100);
+        </script>
+        </p>
+          
+        <p>
+        <canvas id="canvas2" width="300" height="300">
+        </canvas> 
+        <script>
+        var canvas = document.getElementById('canvas2');
+        ctx =canvas.getContext('2d');
+        ctx.font="bold 22px Tahoma";
+        ctx.textAlign="start";
+        ctx.fillText("start", 10, 30);
+        ctx.translate(100, 150);
+        ctx.fillText("after translate", 0, 0);
+        ctx.rotate(1);
+        ctx.fillText("after rotate", 0, 0);
+        ctx.scale(1.5, 4);
+        ctx.fillText("after scale", 0,20);
+        </script>
+        </p>
+    <p>
+    <form autocomplete="off">
+    <label for="e-mail">Your e-mail address: </label>
+    <input type="text" name="email" placeholder="email@example.com" required /> 
+    <input type="submit" value="Submit" />
+    </form>
+    </p>
+    <input id="car" type="text" list="colors" />
+    <datalist id="colors">
+    <option value="Red">
+    <option value="Green">
+    <option value="Yellow">
+    </datalist>
+    
+    
+    
+    </body>
+</html>

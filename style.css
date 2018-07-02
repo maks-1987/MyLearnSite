@@ -1,0 +1,14 @@
+p1 {
+    color:white;
+    background-color:gray;
+    font-size: 150%;
+    }
+
+h1 { color: orange; }
+
+.first {font-size: 200%;}
+
+#intro .first em {
+   color: pink; 
+   background-color:gray;
+}
