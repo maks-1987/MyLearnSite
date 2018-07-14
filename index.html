@@ -80,14 +80,14 @@
         ctx.scale(1.5, 4);
         ctx.fillText("after scale", 0,20);
         </script>
-        </p>
+        
     <p>
     <form autocomplete="off">
     <label for="e-mail">Your e-mail address: </label>
     <input type="text" name="email" placeholder="email@example.com" required /> 
     <input type="submit" value="Submit" />
     </form>
-    </p>
+        
     <input id="car" type="text" list="colors" />
     <datalist id="colors">
     <option value="Red">
@@ -95,7 +95,18 @@
     <option value="Yellow">
     </datalist>
     
-    
+    <pre>
+       FileOutputStream fos = new FileOutputStream("t.tmp");
+       ObjectOutputStream oos = new ObjectOutputStream(fos);
+ 
+       oos.writeInt(12345);
+       oos.writeObject("Today");
+       oos.writeObject(new Date());
+ 
+       oos.close();
+   </pre>
+   
+   
     
     </body>
 </html>
